@@ -2321,6 +2321,15 @@ class plsqlListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by plsqlParser#LikeExpr.
+    def enterLikeExpr(self, ctx:plsqlParser.LikeExprContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#LikeExpr.
+    def exitLikeExpr(self, ctx:plsqlParser.LikeExprContext):
+        pass
+
+
     # Enter a parse tree produced by plsqlParser#MemberExpr.
     def enterMemberExpr(self, ctx:plsqlParser.MemberExprContext):
         pass
@@ -2336,6 +2345,15 @@ class plsqlListener(ParseTreeListener):
 
     # Exit a parse tree produced by plsqlParser#InExpr.
     def exitInExpr(self, ctx:plsqlParser.InExprContext):
+        pass
+
+
+    # Enter a parse tree produced by plsqlParser#BetweenExpr.
+    def enterBetweenExpr(self, ctx:plsqlParser.BetweenExprContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#BetweenExpr.
+    def exitBetweenExpr(self, ctx:plsqlParser.BetweenExprContext):
         pass
 
 
@@ -2363,15 +2381,6 @@ class plsqlListener(ParseTreeListener):
 
     # Exit a parse tree produced by plsqlParser#is_part.
     def exitIs_part(self, ctx:plsqlParser.Is_partContext):
-        pass
-
-
-    # Enter a parse tree produced by plsqlParser#in_part.
-    def enterIn_part(self, ctx:plsqlParser.In_partContext):
-        pass
-
-    # Exit a parse tree produced by plsqlParser#in_part.
-    def exitIn_part(self, ctx:plsqlParser.In_partContext):
         pass
 
 
@@ -2645,12 +2654,39 @@ class plsqlListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by plsqlParser#standard_function.
-    def enterStandard_function(self, ctx:plsqlParser.Standard_functionContext):
+    # Enter a parse tree produced by plsqlParser#AggregateCall.
+    def enterAggregateCall(self, ctx:plsqlParser.AggregateCallContext):
         pass
 
-    # Exit a parse tree produced by plsqlParser#standard_function.
-    def exitStandard_function(self, ctx:plsqlParser.Standard_functionContext):
+    # Exit a parse tree produced by plsqlParser#AggregateCall.
+    def exitAggregateCall(self, ctx:plsqlParser.AggregateCallContext):
+        pass
+
+
+    # Enter a parse tree produced by plsqlParser#TodoCall.
+    def enterTodoCall(self, ctx:plsqlParser.TodoCallContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#TodoCall.
+    def exitTodoCall(self, ctx:plsqlParser.TodoCallContext):
+        pass
+
+
+    # Enter a parse tree produced by plsqlParser#XmlCall.
+    def enterXmlCall(self, ctx:plsqlParser.XmlCallContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#XmlCall.
+    def exitXmlCall(self, ctx:plsqlParser.XmlCallContext):
+        pass
+
+
+    # Enter a parse tree produced by plsqlParser#aggregate_windowed_function.
+    def enterAggregate_windowed_function(self, ctx:plsqlParser.Aggregate_windowed_functionContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#aggregate_windowed_function.
+    def exitAggregate_windowed_function(self, ctx:plsqlParser.Aggregate_windowed_functionContext):
         pass
 
 

@@ -2324,6 +2324,15 @@ plsqlListener.prototype.exitParenExpr = function(ctx) {
 };
 
 
+// Enter a parse tree produced by plsqlParser#LikeExpr.
+plsqlListener.prototype.enterLikeExpr = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#LikeExpr.
+plsqlListener.prototype.exitLikeExpr = function(ctx) {
+};
+
+
 // Enter a parse tree produced by plsqlParser#MemberExpr.
 plsqlListener.prototype.enterMemberExpr = function(ctx) {
 };
@@ -2339,6 +2348,15 @@ plsqlListener.prototype.enterInExpr = function(ctx) {
 
 // Exit a parse tree produced by plsqlParser#InExpr.
 plsqlListener.prototype.exitInExpr = function(ctx) {
+};
+
+
+// Enter a parse tree produced by plsqlParser#BetweenExpr.
+plsqlListener.prototype.enterBetweenExpr = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#BetweenExpr.
+plsqlListener.prototype.exitBetweenExpr = function(ctx) {
 };
 
 
@@ -2366,15 +2384,6 @@ plsqlListener.prototype.enterIs_part = function(ctx) {
 
 // Exit a parse tree produced by plsqlParser#is_part.
 plsqlListener.prototype.exitIs_part = function(ctx) {
-};
-
-
-// Enter a parse tree produced by plsqlParser#in_part.
-plsqlListener.prototype.enterIn_part = function(ctx) {
-};
-
-// Exit a parse tree produced by plsqlParser#in_part.
-plsqlListener.prototype.exitIn_part = function(ctx) {
 };
 
 
@@ -2648,12 +2657,39 @@ plsqlListener.prototype.exitQuantified_expression = function(ctx) {
 };
 
 
-// Enter a parse tree produced by plsqlParser#standard_function.
-plsqlListener.prototype.enterStandard_function = function(ctx) {
+// Enter a parse tree produced by plsqlParser#AggregateCall.
+plsqlListener.prototype.enterAggregateCall = function(ctx) {
 };
 
-// Exit a parse tree produced by plsqlParser#standard_function.
-plsqlListener.prototype.exitStandard_function = function(ctx) {
+// Exit a parse tree produced by plsqlParser#AggregateCall.
+plsqlListener.prototype.exitAggregateCall = function(ctx) {
+};
+
+
+// Enter a parse tree produced by plsqlParser#TodoCall.
+plsqlListener.prototype.enterTodoCall = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#TodoCall.
+plsqlListener.prototype.exitTodoCall = function(ctx) {
+};
+
+
+// Enter a parse tree produced by plsqlParser#XmlCall.
+plsqlListener.prototype.enterXmlCall = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#XmlCall.
+plsqlListener.prototype.exitXmlCall = function(ctx) {
+};
+
+
+// Enter a parse tree produced by plsqlParser#aggregate_windowed_function.
+plsqlListener.prototype.enterAggregate_windowed_function = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#aggregate_windowed_function.
+plsqlListener.prototype.exitAggregate_windowed_function = function(ctx) {
 };
 
 

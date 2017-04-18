@@ -1294,6 +1294,11 @@ class plsqlVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by plsqlParser#LikeExpr.
+    def visitLikeExpr(self, ctx:plsqlParser.LikeExprContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by plsqlParser#MemberExpr.
     def visitMemberExpr(self, ctx:plsqlParser.MemberExprContext):
         return self.visitChildren(ctx)
@@ -1301,6 +1306,11 @@ class plsqlVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by plsqlParser#InExpr.
     def visitInExpr(self, ctx:plsqlParser.InExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by plsqlParser#BetweenExpr.
+    def visitBetweenExpr(self, ctx:plsqlParser.BetweenExprContext):
         return self.visitChildren(ctx)
 
 
@@ -1316,11 +1326,6 @@ class plsqlVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by plsqlParser#is_part.
     def visitIs_part(self, ctx:plsqlParser.Is_partContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by plsqlParser#in_part.
-    def visitIn_part(self, ctx:plsqlParser.In_partContext):
         return self.visitChildren(ctx)
 
 
@@ -1474,8 +1479,23 @@ class plsqlVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by plsqlParser#standard_function.
-    def visitStandard_function(self, ctx:plsqlParser.Standard_functionContext):
+    # Visit a parse tree produced by plsqlParser#AggregateCall.
+    def visitAggregateCall(self, ctx:plsqlParser.AggregateCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by plsqlParser#TodoCall.
+    def visitTodoCall(self, ctx:plsqlParser.TodoCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by plsqlParser#XmlCall.
+    def visitXmlCall(self, ctx:plsqlParser.XmlCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by plsqlParser#aggregate_windowed_function.
+    def visitAggregate_windowed_function(self, ctx:plsqlParser.Aggregate_windowed_functionContext):
         return self.visitChildren(ctx)
 
 

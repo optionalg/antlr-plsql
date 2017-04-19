@@ -1354,11 +1354,6 @@ class plsqlVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by plsqlParser#in_elements.
-    def visitIn_elements(self, ctx:plsqlParser.In_elementsContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by plsqlParser#between_elements.
     def visitBetween_elements(self, ctx:plsqlParser.Between_elementsContext):
         return self.visitChildren(ctx)

@@ -2429,15 +2429,6 @@ class plsqlListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by plsqlParser#in_elements.
-    def enterIn_elements(self, ctx:plsqlParser.In_elementsContext):
-        pass
-
-    # Exit a parse tree produced by plsqlParser#in_elements.
-    def exitIn_elements(self, ctx:plsqlParser.In_elementsContext):
-        pass
-
-
     # Enter a parse tree produced by plsqlParser#between_elements.
     def enterBetween_elements(self, ctx:plsqlParser.Between_elementsContext):
         pass

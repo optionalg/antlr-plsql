@@ -2432,15 +2432,6 @@ plsqlListener.prototype.exitLike_escape_part = function(ctx) {
 };
 
 
-// Enter a parse tree produced by plsqlParser#in_elements.
-plsqlListener.prototype.enterIn_elements = function(ctx) {
-};
-
-// Exit a parse tree produced by plsqlParser#in_elements.
-plsqlListener.prototype.exitIn_elements = function(ctx) {
-};
-
-
 // Enter a parse tree produced by plsqlParser#between_elements.
 plsqlListener.prototype.enterBetween_elements = function(ctx) {
 };

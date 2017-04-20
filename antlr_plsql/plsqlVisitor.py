@@ -849,13 +849,18 @@ class plsqlVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by plsqlParser#table_ref_list.
-    def visitTable_ref_list(self, ctx:plsqlParser.Table_ref_listContext):
+    # Visit a parse tree produced by plsqlParser#table_ref_pivot.
+    def visitTable_ref_pivot(self, ctx:plsqlParser.Table_ref_pivotContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by plsqlParser#table_ref.
-    def visitTable_ref(self, ctx:plsqlParser.Table_refContext):
+    # Visit a parse tree produced by plsqlParser#TableRefAux.
+    def visitTableRefAux(self, ctx:plsqlParser.TableRefAuxContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by plsqlParser#JoinExpr.
+    def visitJoinExpr(self, ctx:plsqlParser.JoinExprContext):
         return self.visitChildren(ctx)
 
 
@@ -879,8 +884,8 @@ class plsqlVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by plsqlParser#outer_join_type.
-    def visitOuter_join_type(self, ctx:plsqlParser.Outer_join_typeContext):
+    # Visit a parse tree produced by plsqlParser#join_type.
+    def visitJoin_type(self, ctx:plsqlParser.Join_typeContext):
         return self.visitChildren(ctx)
 
 

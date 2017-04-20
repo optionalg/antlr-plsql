@@ -1523,21 +1523,30 @@ plsqlListener.prototype.exitFrom_clause = function(ctx) {
 };
 
 
-// Enter a parse tree produced by plsqlParser#table_ref_list.
-plsqlListener.prototype.enterTable_ref_list = function(ctx) {
+// Enter a parse tree produced by plsqlParser#table_ref_pivot.
+plsqlListener.prototype.enterTable_ref_pivot = function(ctx) {
 };
 
-// Exit a parse tree produced by plsqlParser#table_ref_list.
-plsqlListener.prototype.exitTable_ref_list = function(ctx) {
+// Exit a parse tree produced by plsqlParser#table_ref_pivot.
+plsqlListener.prototype.exitTable_ref_pivot = function(ctx) {
 };
 
 
-// Enter a parse tree produced by plsqlParser#table_ref.
-plsqlListener.prototype.enterTable_ref = function(ctx) {
+// Enter a parse tree produced by plsqlParser#TableRefAux.
+plsqlListener.prototype.enterTableRefAux = function(ctx) {
 };
 
-// Exit a parse tree produced by plsqlParser#table_ref.
-plsqlListener.prototype.exitTable_ref = function(ctx) {
+// Exit a parse tree produced by plsqlParser#TableRefAux.
+plsqlListener.prototype.exitTableRefAux = function(ctx) {
+};
+
+
+// Enter a parse tree produced by plsqlParser#JoinExpr.
+plsqlListener.prototype.enterJoinExpr = function(ctx) {
+};
+
+// Exit a parse tree produced by plsqlParser#JoinExpr.
+plsqlListener.prototype.exitJoinExpr = function(ctx) {
 };
 
 
@@ -1577,12 +1586,12 @@ plsqlListener.prototype.exitJoin_using_part = function(ctx) {
 };
 
 
-// Enter a parse tree produced by plsqlParser#outer_join_type.
-plsqlListener.prototype.enterOuter_join_type = function(ctx) {
+// Enter a parse tree produced by plsqlParser#join_type.
+plsqlListener.prototype.enterJoin_type = function(ctx) {
 };
 
-// Exit a parse tree produced by plsqlParser#outer_join_type.
-plsqlListener.prototype.exitOuter_join_type = function(ctx) {
+// Exit a parse tree produced by plsqlParser#join_type.
+plsqlListener.prototype.exitJoin_type = function(ctx) {
 };
 
 

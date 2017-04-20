@@ -1520,21 +1520,30 @@ class plsqlListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by plsqlParser#table_ref_list.
-    def enterTable_ref_list(self, ctx:plsqlParser.Table_ref_listContext):
+    # Enter a parse tree produced by plsqlParser#table_ref_pivot.
+    def enterTable_ref_pivot(self, ctx:plsqlParser.Table_ref_pivotContext):
         pass
 
-    # Exit a parse tree produced by plsqlParser#table_ref_list.
-    def exitTable_ref_list(self, ctx:plsqlParser.Table_ref_listContext):
+    # Exit a parse tree produced by plsqlParser#table_ref_pivot.
+    def exitTable_ref_pivot(self, ctx:plsqlParser.Table_ref_pivotContext):
         pass
 
 
-    # Enter a parse tree produced by plsqlParser#table_ref.
-    def enterTable_ref(self, ctx:plsqlParser.Table_refContext):
+    # Enter a parse tree produced by plsqlParser#TableRefAux.
+    def enterTableRefAux(self, ctx:plsqlParser.TableRefAuxContext):
         pass
 
-    # Exit a parse tree produced by plsqlParser#table_ref.
-    def exitTable_ref(self, ctx:plsqlParser.Table_refContext):
+    # Exit a parse tree produced by plsqlParser#TableRefAux.
+    def exitTableRefAux(self, ctx:plsqlParser.TableRefAuxContext):
+        pass
+
+
+    # Enter a parse tree produced by plsqlParser#JoinExpr.
+    def enterJoinExpr(self, ctx:plsqlParser.JoinExprContext):
+        pass
+
+    # Exit a parse tree produced by plsqlParser#JoinExpr.
+    def exitJoinExpr(self, ctx:plsqlParser.JoinExprContext):
         pass
 
 
@@ -1574,12 +1583,12 @@ class plsqlListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by plsqlParser#outer_join_type.
-    def enterOuter_join_type(self, ctx:plsqlParser.Outer_join_typeContext):
+    # Enter a parse tree produced by plsqlParser#join_type.
+    def enterJoin_type(self, ctx:plsqlParser.Join_typeContext):
         pass
 
-    # Exit a parse tree produced by plsqlParser#outer_join_type.
-    def exitOuter_join_type(self, ctx:plsqlParser.Outer_join_typeContext):
+    # Exit a parse tree produced by plsqlParser#join_type.
+    def exitJoin_type(self, ctx:plsqlParser.Join_typeContext):
         pass
 
 

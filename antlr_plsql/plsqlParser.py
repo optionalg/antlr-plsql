@@ -1,11 +1,13 @@
-# Generated from antlr_plsql/plsql.g4 by ANTLR 4.6.1
+# Generated from antlr_plsql/plsql.g4 by ANTLR 4.7
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
+from typing.io import TextIO
+import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\u020c")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u020c")
         buf.write("\u1427\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
@@ -791,12 +793,12 @@ def serializedATN():
         buf.write("\u016b\u016d\u0178\u017c\u0184\u0186\u018b\u018d\u0190")
         buf.write("\u0193\u0193\u0195\u0195\u0197\u019a\u019c\u019d\u019f")
         buf.write("\u01a8\u01aa\u01aa\u01ac\u01ac\u01ae\u01e0\u020b\u020b")
-        buf.write("\u1672\2\u02e7\3\2\2\2\4\u02ee\3\2\2\2\6\u0305\3\2\2\2")
-        buf.write("\b\u031a\3\2\2\2\n\u031c\3\2\2\2\f\u0320\3\2\2\2\16\u0336")
-        buf.write("\3\2\2\2\20\u0368\3\2\2\2\22\u036c\3\2\2\2\24\u0384\3")
-        buf.write("\2\2\2\26\u0388\3\2\2\2\30\u0394\3\2\2\2\32\u03a2\3\2")
-        buf.write("\2\2\34\u03a9\3\2\2\2\36\u03bd\3\2\2\2 \u03c7\3\2\2\2")
-        buf.write("\"\u03d8\3\2\2\2$\u03f0\3\2\2\2&\u03f2\3\2\2\2(\u0403")
+        buf.write("\2\u1672\2\u02e7\3\2\2\2\4\u02ee\3\2\2\2\6\u0305\3\2\2")
+        buf.write("\2\b\u031a\3\2\2\2\n\u031c\3\2\2\2\f\u0320\3\2\2\2\16")
+        buf.write("\u0336\3\2\2\2\20\u0368\3\2\2\2\22\u036c\3\2\2\2\24\u0384")
+        buf.write("\3\2\2\2\26\u0388\3\2\2\2\30\u0394\3\2\2\2\32\u03a2\3")
+        buf.write("\2\2\2\34\u03a9\3\2\2\2\36\u03bd\3\2\2\2 \u03c7\3\2\2")
+        buf.write("\2\"\u03d8\3\2\2\2$\u03f0\3\2\2\2&\u03f2\3\2\2\2(\u0403")
         buf.write("\3\2\2\2*\u0426\3\2\2\2,\u0428\3\2\2\2.\u042c\3\2\2\2")
         buf.write("\60\u0442\3\2\2\2\62\u0465\3\2\2\2\64\u0469\3\2\2\2\66")
         buf.write("\u0480\3\2\2\28\u0497\3\2\2\2:\u04a0\3\2\2\2<\u04a9\3")
@@ -4412,9 +4414,9 @@ class plsqlParser ( Parser ):
     REGULAR_ID=521
     ZV=522
 
-    def __init__(self, input:TokenStream):
-        super().__init__(input)
-        self.checkVersion("4.6.1")
+    def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
+        super().__init__(input, output)
+        self.checkVersion("4.7")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
